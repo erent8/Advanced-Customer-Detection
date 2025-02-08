@@ -1,0 +1,497 @@
+2025-02-09 00:45:06 | INFO | Müşteri tespit sistemi başlatıldı
+2025-02-09 00:45:07 | ERROR | Hata oluştu: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-02-09 00:45:07 | INFO | Uygulama kapatıldı
+2025-02-09 00:45:36 | INFO | Müşteri tespit sistemi başlatıldı
+2025-02-09 00:45:36 | ERROR | Hata oluştu: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\cascadedetect.cpp:1689: error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
+
+2025-02-09 00:45:37 | INFO | Uygulama kapatıldı
+2025-02-09 00:48:38 | INFO | Müşteri tespit sistemi başlatıldı
+2025-02-09 00:48:39 | ERROR | Hata oluştu: (sqlite3.OperationalError) no such table: customer_detections
+[SQL: INSERT INTO customer_detections (timestamp, customer_count, confidence_score, detection_area) VALUES (?, ?, ?, ?)]
+[parameters: ('2025-02-09 00:48:39.255139', 1, None, 'main_entrance')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-02-09 00:48:39 | INFO | Uygulama kapatıldı
+2025-02-09 00:50:52 | INFO | Müşteri tespit sistemi başlatıldı
+2025-02-09 00:50:53 | ERROR | Hata oluştu: (sqlite3.OperationalError) no such table: customer_detections
+[SQL: INSERT INTO customer_detections (timestamp, customer_count, confidence_score, detection_area) VALUES (?, ?, ?, ?)]
+[parameters: ('2025-02-09 00:50:53.437528', 1, None, 'main_entrance')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-02-09 00:50:53 | INFO | Uygulama kapatıldı
+2025-02-09 00:51:23 | INFO | Müşteri tespit sistemi başlatıldı
+2025-02-09 00:51:24 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:25 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:51:26 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:31 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:31 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:31 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:31 | CUSTOMER | Tespit edilen müşteri sayısı: 7
+2025-02-09 00:51:31 | CUSTOMER | Tespit edilen müşteri sayısı: 7
+2025-02-09 00:51:31 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:31 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 7
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:32 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 8
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 7
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 8
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 8
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 8
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 9
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 9
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 7
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 7
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 7
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:33 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:34 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:51:35 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:36 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:37 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:51:39 | INFO | Uygulama kapatıldı
+2025-02-09 00:59:10 | INFO | Uygulama başlatıldı
+2025-02-09 00:59:11 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:11 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:11 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:11 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:11 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:11 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:12 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:16 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:16 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:16 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:16 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 5
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:17 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:18 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 00:59:21 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:21 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:21 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:21 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 3
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 4
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 8
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 7
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 7
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 9
+2025-02-09 00:59:22 | CUSTOMER | Tespit edilen müşteri sayısı: 6
+2025-02-09 00:59:22 | INFO | Uygulama kapatıldı
+2025-02-09 01:02:18 | INFO | Uygulama başlatıldı
+2025-02-09 01:02:26 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:02:26 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:02:26 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:02:26 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:02:26 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:02:26 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:02:26 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:02:26 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:02:31 | INFO | Uygulama kapatıldı
+2025-02-09 01:11:10 | INFO | Uygulama başlatıldı
+2025-02-09 01:11:13 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:13 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 2
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:14 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:15 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:16 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:20 | CUSTOMER | Tespit edilen müşteri sayısı: 1
+2025-02-09 01:11:24 | INFO | Uygulama kapatıldı
+2025-02-09 01:23:58 | ERROR | Hata oluştu: Test hatası
+2025-02-09 01:24:40 | ERROR | Hata oluştu: Test hatası
+2025-02-09 01:26:36 | ERROR | Hata oluştu: Test hatası
+2025-02-09 01:29:32 | ERROR | Hata oluştu: Test hatası
+2025-02-09 01:30:16 | ERROR | Hata oluştu: Test hatası
+2025-02-09 01:30:18 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
+2025-02-09 01:31:19 | ERROR | Hata oluştu: Test hatası
+2025-02-09 01:31:22 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
+2025-02-09 01:31:56 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Mock object has no attribute 'get_hourly_distribution'
+2025-02-09 01:31:57 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Mock object has no attribute 'get_hourly_distribution'
+2025-02-09 01:31:57 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Mock object has no attribute 'get_hourly_distribution'
+2025-02-09 01:31:57 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Mock object has no attribute 'get_hourly_distribution'
+2025-02-09 01:31:57 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Mock object has no attribute 'get_hourly_distribution'
+2025-02-09 01:31:57 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
+2025-02-09 01:31:57 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Mock object has no attribute 'get_hourly_distribution'
+2025-02-09 01:33:39 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Mock object has no attribute 'get_hourly_distribution'
+2025-02-09 01:33:39 | ERROR | Hata oluştu: Günlük trend grafiği oluşturulurken hata: Mock object has no attribute 'get_daily_trend'
+2025-02-09 01:33:39 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Mock object has no attribute 'get_hourly_distribution'
+2025-02-09 01:33:39 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Mock object has no attribute 'get_hourly_distribution'
+2025-02-09 01:33:40 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
+2025-02-09 01:33:40 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Mock object has no attribute 'get_hourly_distribution'
+2025-02-09 01:37:03 | ERROR | Hata oluştu: Saatlik dağılım verisi boş
+2025-02-09 01:37:03 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Test hatası
+2025-02-09 01:37:04 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
+2025-02-09 01:37:32 | ERROR | Hata oluştu: Saatlik dağılım verisi boş
+2025-02-09 01:37:32 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Test hatası
+2025-02-09 01:37:33 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
+2025-02-09 01:38:18 | ERROR | Hata oluştu: Saatlik dağılım verisi boş
+2025-02-09 01:38:18 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Test hatası
+2025-02-09 01:38:18 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
+2025-02-09 01:38:42 | ERROR | Hata oluştu: Saatlik dağılım verisi boş
+2025-02-09 01:38:42 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Test hatası
+2025-02-09 01:38:43 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
+2025-02-09 01:40:27 | ERROR | Hata oluştu: Saatlik dağılım verisi boş
+2025-02-09 01:40:27 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Test hatası
+2025-02-09 01:40:28 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
+2025-02-09 01:42:11 | ERROR | Hata oluştu: Saatlik dağılım verisi boş
+2025-02-09 01:42:11 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Test hatası
+2025-02-09 01:42:11 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
+2025-02-09 01:42:33 | ERROR | Hata oluştu: Saatlik dağılım verisi boş
+2025-02-09 01:42:33 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Test hatası
+2025-02-09 01:42:33 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
+2025-02-09 01:42:51 | ERROR | Hata oluştu: Saatlik dağılım verisi boş
+2025-02-09 01:42:51 | ERROR | Hata oluştu: Saatlik dağılım grafiği oluşturulurken hata: Test hatası
+2025-02-09 01:42:51 | ERROR | Hata oluştu: Grafik kaydedilirken hata oluştu: Kaydetme hatası
