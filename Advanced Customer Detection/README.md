@@ -1,4 +1,4 @@
-# Gelen Müşteri Habercisi 2.0 🏪
+# Gelen Müşteri Habercisi 1.0 🏪
 
 ## Proje Hakkında
 Bu proje, işletmelerin müşteri trafiğini akıllı kamera sistemleri ile takip eden, analiz eden ve işletme sahiplerine değerli içgörüler sunan bir çözümdür. Temel amacı, işletme sahiplerinin müşteri yönetimini optimize etmelerine ve iş süreçlerini iyileştirmelerine yardımcı olmaktır.
