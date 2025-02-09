@@ -92,7 +92,7 @@ This project is a solution that tracks and analyzes customer traffic of business
 pip install -r requirements.txt
 
 # Start the application
-python main.py
+python camera.py
 ```
 
 ## Contribute
@@ -102,4 +102,4 @@ To contribute to the project, please open an Issue or send a Pull Request.
 This project is licensed under the MIT license.
 
 ## Communication
-[Your contact information]
+[erenterzi@protonmail.com]
