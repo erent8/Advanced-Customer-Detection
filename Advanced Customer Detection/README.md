@@ -12,19 +12,19 @@ Bu proje, işletmelerin müşteri trafiğini akıllı kamera sistemleri ile taki
 ## Geliştirme Yol Haritası (Roadmap)
 
 ### Faz 1: Temel İyileştirmeler ve Altyapı (1-2 Hafta)
-- [ ] Kod yapısının modernizasyonu ve optimizasyonu
-- [ ] Hata yakalama ve loglama sisteminin geliştirilmesi
-- [ ] Veritabanı entegrasyonu (SQLite/PostgreSQL)
-- [ ] Konfigürasyon yönetimi
-- [ ] Birim testlerin eklenmesi
+- [x] Kod yapısının modernizasyonu ve optimizasyonu
+- [x] Hata yakalama ve loglama sisteminin geliştirilmesi
+- [x] Veritabanı entegrasyonu (SQLite/PostgreSQL)
+- [x] Konfigürasyon yönetimi
+- [x] Birim testlerin eklenmesi
 
 ### Faz 2: Gelişmiş Analitik Özellikler (2-3 Hafta)
-- [ ] Müşteri sayım istatistikleri
-  - [ ] Saatlik yoğunluk analizi
-  - [ ] Günlük/Haftalık/Aylık raporlar
-  - [ ] Ziyaret süresi takibi
-- [ ] Veri görselleştirme
-  - [ ] Grafikler ve ısı haritaları
+- [x] Müşteri sayım istatistikleri
+  - [x] Saatlik yoğunluk analizi
+  - [x] Günlük/Haftalık/Aylık raporlar
+  - [x] Ziyaret süresi takibi
+- [x] Veri görselleştirme
+  - [x] Grafikler ve ısı haritaları
   - [ ] İnteraktif dashboard
 - [ ] Raporlama sistemi
   - [ ] PDF rapor oluşturma
