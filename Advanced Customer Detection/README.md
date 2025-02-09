@@ -8,6 +8,9 @@ This project is a solution that tracks and analyzes customer traffic of business
 - 🔊 Voice notification when customer arrives
 - 📝 Basic logging
 - 👥 Instant customer count display
+- 📊 Hourly density analysis
+- ℹ️ Daily/Weekly/Monthly reports
+- ⏳ Visit duration tracking
 
 ## Development Roadmap
 
