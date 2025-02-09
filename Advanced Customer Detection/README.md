@@ -1,102 +1,102 @@
-# Gelen Müşteri Habercisi 1.0 🏪
+# Advanced Customer Messenger 1.0 🏪
 
-## Proje Hakkında
-Bu proje, işletmelerin müşteri trafiğini akıllı kamera sistemleri ile takip eden, analiz eden ve işletme sahiplerine değerli içgörüler sunan bir çözümdür. Temel amacı, işletme sahiplerinin müşteri yönetimini optimize etmelerine ve iş süreçlerini iyileştirmelerine yardımcı olmaktır.
+## About the Project
+This project is a solution that tracks and analyzes customer traffic of businesses with smart camera systems and provides valuable insights to business owners. Its main purpose is to help business owners optimize customer management and improve business processes.
 
-## Mevcut Özellikler
-- 📸 Gerçek zamanlı insan tespiti
-- 🔊 Müşteri geldiğinde sesli bildirim
-- 📝 Temel log kaydı
-- 👥 Anlık müşteri sayısı gösterimi
+## Available Features
+- 📸 Real-time human detection
+- 🔊 Voice notification when customer arrives
+- 📝 Basic logging
+- 👥 Instant customer count display
 
-## Geliştirme Yol Haritası (Roadmap)
+## Development Roadmap
 
-### Faz 1: Temel İyileştirmeler ve Altyapı (1-2 Hafta)
-- [x] Kod yapısının modernizasyonu ve optimizasyonu
-- [x] Hata yakalama ve loglama sisteminin geliştirilmesi
-- [x] Veritabanı entegrasyonu (SQLite/PostgreSQL)
-- [x] Konfigürasyon yönetimi
-- [x] Birim testlerin eklenmesi
+### Phase 1: Basic Improvements and Infrastructure (1-2 Weeks)
+- [x] Modernization and optimization of code structure
+- [x] Development of error trapping and logging system
+- [x] Database integration (SQLite/PostgreSQL)
+- [x] Configuration management
+- [x] Adding unit tests
 
-### Faz 2: Gelişmiş Analitik Özellikler (2-3 Hafta)
-- [x] Müşteri sayım istatistikleri
-  - [x] Saatlik yoğunluk analizi
-  - [x] Günlük/Haftalık/Aylık raporlar
-  - [x] Ziyaret süresi takibi
-- [x] Veri görselleştirme
-  - [x] Grafikler ve ısı haritaları
-  - [ ] İnteraktif dashboard
-- [ ] Raporlama sistemi
-  - [ ] PDF rapor oluşturma
-  - [ ] Excel export özelliği
+### Phase 2: Advanced Analytical Features (2-3 Weeks)
+- [x] Customer count statistics
+  - [x] Hourly density analysis
+  - [x] Daily/Weekly/Monthly reports
+  - [x] Visit duration tracking
+- [x] Data visualization
+  - [x] Graphs and heatmaps
+  - [ ] Interactive dashboard
+  - [ ] Reporting system
+  - [ ] PDF report generation
+  - [ ] Excel export feature
 
-### Faz 3: Yapay Zeka Entegrasyonu (3-4 Hafta)
-- [ ] Gelişmiş insan tespiti
-  - [ ] Yaş tahmini
-  - [ ] Cinsiyet tespiti
-  - [ ] Duygu analizi
-- [ ] Müşteri davranış analizi
-  - [ ] Hareket örüntüleri
-  - [ ] Mağaza içi rota analizi
-- [ ] Tekrarlayan müşteri tespiti
+### Phase 3: Artificial Intelligence Integration (3-4 Weeks)
+- [ ] Advanced human detection
+  - [ ] Age estimation
+  - [ ] Gender determination
+  - [ ] Sentiment analysis
+- [ ] Customer behavior analysis
+  - [ ] Movement patterns
+  - [ ] In-store route analysis
+- [ ] Repeat customer detection
 
-### Faz 4: Güvenlik ve İzleme Özellikleri (2-3 Hafta)
-- [ ] Gelişmiş güvenlik özellikleri
-  - [ ] Şüpheli davranış tespiti
-  - [ ] Hareket algılama ve kayıt
-  - [ ] Gece görüş modu
-- [ ] Canlı izleme sistemi
-  - [ ] Çoklu kamera desteği
-  - [ ] Video kayıt ve arşivleme
+### Phase 4: Security and Monitoring Features (2-3 Weeks)
+- [ ] Advanced security features
+  - [ ] Suspicious behavior detection
+  - [ ] Motion detection and recording
+  - [ ] Night vision mode
+- [ ] Live monitoring system
+  - [ ] Multi-camera support
+  - [ ] Video recording and archiving
 
-### Faz 5: Kullanıcı Arayüzü ve Mobil Uygulama (4-5 Hafta)
-- [ ] Web tabanlı yönetim paneli
-  - [ ] Kullanıcı yetkilendirme sistemi
-  - [ ] Gerçek zamanlı izleme
-  - [ ] İstatistik ve raporlama arayüzü
-- [ ] Mobil uygulama
-  - [ ] iOS ve Android desteği
-  - [ ] Push bildirimler
-  - [ ] Uzaktan izleme
+### Phase 5: User Interface and Mobile App (4-5 Weeks)
+- [ ] Web-based management panel
+  - [ ] User authorization system
+  - [ ] Real-time monitoring
+  - [ ] Statistics and reporting interface
+- [ ] Mobile application
+  - [ ] iOS and Android support
+  - [ ] Push notifications
+  - [ ] Remote viewing
 
-### Faz 6: Entegrasyon ve Otomasyon (3-4 Hafta)
-- [ ] Harici sistem entegrasyonları
-  - [ ] POS sistemi entegrasyonu
-  - [ ] CRM sistemi entegrasyonu
-- [ ] Akıllı otomasyon özellikleri
-  - [ ] Işık kontrolü
-  - [ ] İklimlendirme kontrolü
-  - [ ] Kapı/güvenlik sistemi entegrasyonu
-- [ ] Bildirim sistemi
-  - [ ] E-posta bildirimleri
-  - [ ] SMS bildirimleri
-  - [ ] Webhook desteği
+### Phase 6: Integration and Automation (3-4 Weeks)
+- [ ] External system integrations
+  - [ ] POS system integration
+  - [ ] CRM system integration
+- [ ] Smart automation features
+  - [ ] Light control
+  - [ ] Climate control
+  - [ ] Door/security system integration
+- [ ] Notification system
+  - [ ] Email notifications
+  - [ ] SMS notifications
+  - [ ] Webhook support
 
-## Teknik Gereksinimler
+## Technical Requirements
 - Python 3.8+
-- OpenCV
-- PyGame
+-OpenCV
+-PyGame
 - NumPy
-- TensorFlow/PyTorch (Faz 3'te eklenecek)
-- Flask/FastAPI (Faz 5'te eklenecek)
+- TensorFlow/PyTorch (to be added in Phase 3)
+- Flask/FastAPI (to be added in Phase 5)
 - SQLAlchemy
-- React/Vue.js (Web arayüzü için)
-- Flutter/React Native (Mobil uygulama için)
+- React/Vue.js (for web interface)
+- Flutter/React Native (For mobile application)
 
-## Kurulum
+## Setup
 ```bash
-# Gerekli Python paketlerinin kurulumu
+# Installation of required Python packages
 pip install -r requirements.txt
 
-# Uygulamayı başlatma
+# Start the application
 python main.py
 ```
 
-## Katkıda Bulunma
-Projeye katkıda bulunmak için lütfen bir Issue açın veya Pull Request gönderin.
+## Contribute
+To contribute to the project, please open an Issue or send a Pull Request.
 
-## Lisans
-Bu proje MIT lisansı altında lisanslanmıştır.
+## Licence
+This project is licensed under the MIT license.
 
-## İletişim
-[İletişim bilgileriniz] 
+## Communication
+[Your contact information]
