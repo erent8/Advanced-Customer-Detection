@@ -1,4 +1,4 @@
-# Advanced Customer Messenger 1.0 🏪
+# Advanced Customer Detection v1.0 🏪
 
 ## About the Project
 This project is a solution that tracks and analyzes customer traffic of businesses with smart camera systems and provides valuable insights to business owners. Its main purpose is to help business owners optimize customer management and improve business processes.
