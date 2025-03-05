@@ -96,7 +96,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## 📞 Contact
 
-For questions: [Email Address]
+For questions: [erenterzi@protonmail.com]
 
 ---
 ⭐️ Don't forget to give a star if you like this project! 
