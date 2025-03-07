@@ -118,4 +118,4 @@ Tests check the following:
 You can open an Issue for questions and suggestions.
 
 ## License
-This project is licensed under the MIT License. 
+This project was developed as open source.
