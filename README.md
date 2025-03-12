@@ -1,2 +1,2 @@
 # OpenCV-Projects
-1- Advanced Customer Dedection 
+1- Advanced Customer Detection 
