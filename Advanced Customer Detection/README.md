@@ -1,270 +1,341 @@
-# Advanced Customer Detection System
+# Advanced Customer Analytics System 🚀
 
-## Overview 🎯
+## Overview
+This system is a comprehensive solution that analyzes customer behavior using AI-powered image processing technologies. It monitors customer traffic in real-time through camera systems, performs analysis, and provides detailed reports.
 
-The Advanced Customer Detection System is a comprehensive analytics dashboard that provides real-time insights into customer behavior and store traffic. Using computer vision and advanced analytics, the system tracks customer movements, analyzes patterns, and generates actionable insights for retail business optimization.
+## 🎯 Core Features and User Guide
 
-## Features ✨
+### 1. Camera System and Image Processing
+#### Camera Setup
+- **Supported Cameras**: 
+  - IP cameras (RTSP support)
+  - USB webcams
+  - Built-in laptop cameras
+  - CCTV systems
 
-### Real-time Analytics
-- Live customer counting
-- Movement pattern analysis
-- Peak hour detection
-- Zone-based analytics
-
-### Visualization Dashboard
-- Interactive graphs and charts
-- Customer density heatmaps
-- Temporal analysis views
-- Custom date range filtering
-
-### Data Management
-- Automated data collection
-- SQLite database storage
-- Data validation and cleaning
-- Historical data analysis
-
-### Reporting
-- Daily/weekly/monthly reports
-- Custom date range analysis
-- Statistical summaries
-- Pattern identification
-
-## Technology Stack 🛠️
-
-### Backend
-- Python 3.8+
-- OpenCV for video processing
-- SQLAlchemy for ORM
-- SQLite for database
-
-### Frontend
-- Dash framework
-- Plotly for visualizations
-- HTML/CSS for styling
-- JavaScript for interactivity
-
-### Analytics
-- NumPy for calculations
-- Pandas for data manipulation
-- Scikit-learn for pattern recognition
-- Custom analytics algorithms
-
-## Installation Guide 📥
-
-### Prerequisites
+#### Camera Settings
 ```bash
-# Required system packages
-- Python 3.8 or higher
-- pip (Python package manager)
-- Git
+# Camera configuration
+python setup_camera.py --device_id 0  # Default camera
+python setup_camera.py --ip "rtsp://camera_ip:port"  # IP camera
+python setup_camera.py --resolution "1920x1080"  # Resolution setting
 ```
 
-### Step 1: Clone the Repository
+#### Image Processing Features
+- Face detection and counting
+- Motion analysis
+- Heat map generation
+- Social distance analysis
+- Crowd density detection
+
+### 2. Real-Time Monitoring System
+
+#### Dashboard Usage
+1. **Startup**
 ```bash
-git clone https://github.com/erent8/advanced-customer-detection.git
-cd advanced-customer-detection
+python run_dashboard.py --port 8050 --debug True
 ```
 
-### Step 2: Create Virtual Environment
-```bash
-# Windows
-python -m venv .venv
-.venv\Scripts\activate
+2. **Main Panel Features**
+- Live camera feed
+- Real-time customer count
+- Density indicators
+- Alarm status
 
-# Linux/Mac
-python3 -m venv .venv
-source .venv/bin/activate
+3. **Monitoring Options**
+- Multi-camera support
+- Zone-based monitoring
+- Custom area definition
+- Motion detection sensitivity
+
+### 3. Analytics Features
+
+#### Customer Count Analysis
+```python
+# Example analysis command
+python analyze.py --date "2024-03-20" --type "hourly"
 ```
 
-### Step 3: Install Dependencies
+- **Hourly Analytics**:
+  - Peak hours
+  - Low density periods
+  - Hourly trends
+
+- **Daily Reports**:
+  - Total visitor count
+  - Average dwell time
+  - Density distribution
+
+- **Weekly/Monthly Statistics**:
+  - Comparative analysis
+  - Trend graphs
+  - Forecasting models
+
+#### Behavioral Analysis
+- Movement patterns
+- Popular areas
+- Dwell points
+- Flow directions
+
+### 4. Visualization and Reporting
+
+#### Graph Types
+1. **3D Density Graphs**
 ```bash
+python visualize.py --type "3d_density" --output "density_report.pdf"
+```
+
+2. **Heat Maps**
+```bash
+python visualize.py --type "heatmap" --area "main_floor"
+```
+
+3. **Trend Analysis**
+```bash
+python visualize.py --type "trend" --period "last_30_days"
+```
+
+#### Report Formats
+- **PDF Reports**
+  - Daily summary
+  - Weekly details
+  - Monthly comparison
+  - Custom period analysis
+
+- **Excel Reports**
+  - Raw data export
+  - Pivot tables
+  - Charts
+  - Filterable data
+
+## Development Roadmap
+
+### Phase 1: Basic Improvements and Infrastructure 
+- [x] Modernization and optimization of code structure
+- [x] Development of error detection and logging system
+- [x] Database integration (SQLite/PostgreSQL)
+- [x] Configuration management
+- [x] Adding unit tests
+
+### Phase 2: Advanced Analytical Features 
+- [x] Customer census statistics
+  - [x] Hourly intensity analysis
+  - [x] Daily/Weekly/Monthly reports
+  - [x] Visit duration tracking
+- [x] Data visualization
+  - [x] Charts and heat maps
+  - [x] Interactive dashboard
+- [x] Reporting system
+  - [ ] PDF report generation
+  - [x] Excel export feature
+
+### Phase 3: Artificial Intelligence Integration
+- [ ] Advanced human detection
+  - [ ] Age estimation
+  - [ ] Gender determination
+  - [ ] Emotion analysis
+- [ ] Customer behavior analysis
+  - [ ] Movement patterns
+  - [ ] In-store route analysis
+- [ ] Repeat customer identification
+
+### Phase 4: Security and Monitoring Features 
+- [ ] Advanced security features
+  - [ ] Suspicious behavior detection
+  - [ ] Motion detection and recording
+  - [ ] Night vision mode
+- [ ] Live monitoring system
+  - [ ] Multi-camera support
+  - [ ] Video recording and archiving
+
+### Phase 5: User Interface and Mobile Application
+- [ ] Web-based management panel
+  - [ ] User authorization system
+  - [ ] Real-time monitoring
+  - [ ] Statistics and reporting interface
+- [ ] Mobile application
+  - [ ] iOS and Android support
+  - [ ] Push notifications
+  - [ ] Remote monitoring
+
+### Phase 6: Integration and Automation 
+- [ ] External system integrations
+  - [ ] POS system integration
+  - [ ] CRM system integration
+- [ ] Smart automation features
+  - [ ] Lighting control
+  - [ ] Climate control
+  - [ ] Door/security system integration
+- [ ] Notification system
+  - [ ] Email notifications
+  - [ ] SMS notifications
+  - [ ] Webhook support
+
+### 5. Performance Monitoring and Optimization
+
+#### System Performance
+```bash
+# Start performance monitor
+python monitor.py --metrics "all"
+```
+
+- CPU usage
+- RAM consumption
+- Disk I/O
+- Network usage
+
+#### Camera Performance
+- FPS (Frames Per Second) tracking
+- Image quality
+- Latency
+- Bandwidth usage
+
+### 6. Security and Data Management
+
+#### Data Security
+- SSL/TLS encryption
+- Role-based access control
+- IP restrictions
+- Session management
+
+#### Backup and Archiving
+```bash
+# Automatic backup
+python backup.py --type "full" --destination "/backup"
+```
+
+- Daily backups
+- Archive management
+- Data compression
+- Automatic cleanup
+
+### 7. Alarm and Notification System
+
+#### Alarm Types
+- Capacity exceeded
+- Abnormal density
+- System errors
+- Security breaches
+
+#### Notification Channels
+```bash
+# Notification settings
+python configure_notifications.py --channels "email,sms,webhook"
+```
+
+- Email notifications
+- SMS alerts
+- Webhook integrations
+- Mobile push notifications
+
+### 8. API and Integration
+
+#### REST API
+```bash
+# Start API server
+python run_api.py --port 5000
+```
+
+Example endpoints:
+- `/api/v1/customers/current`: Current customer count
+- `/api/v1/analytics/daily`: Daily analysis
+- `/api/v1/heatmap/latest`: Latest heat map
+- `/api/v1/alerts`: Active alerts
+
+#### Webhook Integrations
+- Slack
+- Microsoft Teams
+- Discord
+- Custom webhooks
+
+## Technical Requirements
+
+### Hardware Requirements
+- **Minimum**:
+  - CPU: Intel Core i5 or equivalent
+  - RAM: 8GB
+  - Disk: 256GB SSD
+  - GPU: 2GB VRAM
+
+- **Recommended**:
+  - CPU: Intel Core i7 or equivalent
+  - RAM: 16GB
+  - Disk: 512GB SSD
+  - GPU: 4GB VRAM
+
+### Software Requirements
+```python
+opencv-python>=4.8.0
+numpy>=1.24.0
+pygame>=2.5.0
+sqlalchemy>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pandas>=2.0.0
+dash>=2.14.0
+plotly>=5.18.0
+fpdf>=1.7.2
+xlsxwriter>=3.1.0
+python-dotenv>=1.0.0
+pytest>=7.4.0
+black>=23.7.0
+flake8>=6.1.0
+pillow>=10.0.0
+loguru>=0.7.0
+click>=8.0.0
+tabulate>=0.9.0
+```
+
+## Installation and Configuration
+
+### 1. Basic Setup
+```bash
+# Clone the repository
+git clone https://github.com/erent8/Advanced-Customer-Detection.git
+
+# Navigate to directory
+cd Advanced-Customer-Detection
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-### Step 4: Initialize Database
+### 2. Camera Configuration
 ```bash
-python src/database.py
+# Camera test
+python test_camera.py --device_id 0
+
+# Camera calibration
+python calibrate_camera.py --device_id 0
 ```
 
-### Step 5: Load Sample Data (Optional)
+### 3. System Optimization
 ```bash
-python test_data.py
+# Performance test
+python benchmark.py --duration 300
+
+# System check
+python system_check.py --verbose
 ```
 
-### Step 6: Start the Dashboard
-```bash
-python run_dashboard.py
-```
+## Troubleshooting and Problem Resolution
 
-The dashboard will be available at `http://127.0.0.1:8050`
+### Camera Issues
+1. **No Video Feed**
+   - Check camera connection
+   - Update drivers
+   - Check port conflicts
 
-## Configuration ⚙️
+2. **Low FPS**
+   - Reduce resolution
+   - Check GPU usage
+   - Check network bandwidth
 
-### Database Settings
-- Located in `src/database.py`
-- Default database: SQLite
-- File location: `database/customer_data.db`
+### Other Troubleshooting Sections
 
-### Analytics Settings
-- Located in `src/analytics.py`
-- Configurable time windows
-- Adjustable calculation parameters
+## License and Contact
+This project is licensed under the MIT License.
 
-### Dashboard Settings
-- Located in `src/dashboard.py`
-- Customizable layouts
-- Configurable update intervals
-
-## Usage Guide 📚
-
-### 1. Accessing the Dashboard
-- Open web browser
-- Navigate to `http://127.0.0.1:8050`
-- Login with credentials (if enabled)
-
-### 2. Viewing Analytics
-- Select date range
-- Choose view mode (daily/weekly/monthly)
-- Interact with graphs
-- Export data (if needed)
-
-### 3. Interpreting Data
-- Customer trend analysis
-- Peak hour identification
-- Pattern recognition
-- Historical comparisons
-
-## Development 👨‍💻
-
-### Project Structure
-```
-advanced-customer-detection/
-├── src/
-│   ├── __init__.py
-│   ├── analytics.py
-│   ├── database.py
-│   ├── dashboard.py
-│   └── models.py
-├── database/
-│   └── customer_data.db
-├── requirements.txt
-├── run_dashboard.py
-├── test_data.py
-└── README.md
-```
-
-### Contributing
-1. Fork the repository
-2. Create feature branch
-3. Commit changes
-4. Push to branch
-5. Create Pull Request
-
-## Troubleshooting 🔧
-
-### Common Issues
-1. **Database Connection Error**
-   - Check database file exists
-   - Verify permissions
-   - Ensure proper initialization
-
-2. **Dashboard Not Loading**
-   - Check port availability
-   - Verify dependencies
-   - Check browser console
-
-3. **Data Not Showing**
-   - Verify database has data
-   - Check date range
-   - Confirm query parameters
-
-## Support 🤝
-
-For support and questions:
-- Create an issue on GitHub
-- Contact development team
-- Check documentation
-
-## License 📄
-
-This project is open source.
-
-## Acknowledgments 🙏
-
-- OpenCV community
-- Dash/Plotly team
-- SQLAlchemy developers
-- All contributors
-
----
-## Roadmap 🗺️
-
-### Q1 2025
-#### Analytics Enhancement
-- [ ] Advanced pattern recognition algorithms
-- [ ] Machine learning-based prediction models
-- [ ] Customer behavior clustering
-- [ ] Seasonal trend analysis
-
-#### Dashboard Improvements
-- [ ] Customizable dashboard layouts
-- [ ] Additional visualization types
-- [ ] Interactive report builder
-- [ ] Real-time alerts system
-
-### Q2 2025
-#### Mobile Integration
-- [ ] Mobile-responsive design
-- [ ] Native mobile application
-- [ ] Push notifications
-- [ ] Offline data synchronization
-
-#### Security Updates
-- [ ] Role-based access control
-- [ ] Enhanced data encryption
-- [ ] Audit logging
-- [ ] Two-factor authentication
-
-### Q3 2025
-#### AI Integration
-- [ ] Customer sentiment analysis
-- [ ] Automated anomaly detection
-- [ ] Predictive analytics
-- [ ] AI-powered recommendations
-
-#### Performance Optimization
-- [ ] Database query optimization
-- [ ] Caching implementation
-- [ ] Real-time processing improvements
-- [ ] Data aggregation optimization
-
-### Q4 2025
-#### Integration & APIs
-- [ ] REST API development
-- [ ] Third-party integrations
-- [ ] Webhook support
-- [ ] External data source connections
-
-#### Advanced Features
-- [ ] Custom report templates
-- [ ] Advanced data export options
-- [ ] Batch processing capabilities
-- [ ] Automated reporting system
-
-### Long-term Goals
-#### Scalability
-- [ ] Multi-store support
-- [ ] Cloud deployment options
-- [ ] Distributed processing
-- [ ] High availability setup
-
-#### Innovation
-- [ ] IoT device integration
-- [ ] Blockchain for data integrity
-- [ ] AR/VR visualizations
-- [ ] Voice interface
-
----
-
-*Last updated: February 2024* 
+For questions and support:
+- Email: support@customer-analytics.com
+- GitHub Issues: [Create New Issue](https://github.com/erent8/Advanced-Customer-Detection/issues) 
