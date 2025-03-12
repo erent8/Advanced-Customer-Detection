@@ -337,5 +337,5 @@ python system_check.py --verbose
 This project is licensed under the MIT License.
 
 For questions and support:
-- Email: support@customer-analytics.com
+- Email: erenterzi@protonmail.com
 - GitHub Issues: [Create New Issue](https://github.com/erent8/Advanced-Customer-Detection/issues) 
