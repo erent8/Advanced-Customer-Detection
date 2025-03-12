@@ -92,7 +92,7 @@ class CustomerDashboard:
         <html>
             <head>
                 {%metas%}
-                <title>Müşteri Analiz Dashboardu</title>
+                <title>Müşteri Analiz Dashboard</title>
                 {%favicon%}
                 {%css%}
                 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
