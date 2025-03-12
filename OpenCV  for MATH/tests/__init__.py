@@ -1,1 +1,0 @@
-# Test paketi başlatma dosyası 
