@@ -1,209 +1,241 @@
-# 🏪 OpenCV Müşteri Analiz Sistemi
+# 🏪 OpenCV Müşteri Tespit Sistemi
 
-Gümüş takı ve saat dükkânları için geliştirilmiş yapay zekâ destekli müşteri analiz sistemi. Bu sistem, kamera görüntüleri kullanarak müşteri trafiğini analiz eder, demografik bilgiler toplar ve iş kararlarına destek olacak detaylı raporlar sunar.
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![OpenCV](https://img.shields.io/badge/OpenCV-4.8+-green.svg)](https://opencv.org)
+[![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-orange.svg)](https://ultralytics.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/erent8/OpenCV-Customer-Detection?style=social)](https://github.com/erent8/OpenCV-Customer-Detection)
 
-## 🎯 Özellikler
+> **Gümüş takı ve saat dükkânları için geliştirilmiş yapay zekâ destekli müşteri analiz sistemi**
 
-### Mevcut Özellikler (v1.0)
-- ✅ **Gerçek Zamanlı Kamera Görüntüsü**: OpenCV ile canlı video akışı
-- ✅ **İnsan Tespiti**: YOLOv8 ile yüksek doğrulukta kişi tanıma
-- ✅ **Temel Ziyaretçi Sayımı**: Günlük müşteri trafiği takibi
-- ✅ **Veri Kaydetme**: CSV ve SQLite ile güvenli veri depolama
+Real-time kamera görüntüleri kullanarak müşteri trafiğini analiz eden, demografik bilgiler toplayan ve iş kararlarına destek olacak detaylı raporlar sunan akıllı sistem.
 
-### Gelecek Özellikler
-- 🔄 **Çalışan Filtreleme**: Yüz tanıma ile çalışanları sayımdan çıkarma
-- 🔄 **Demografik Analiz**: Yaş ve cinsiyet tahmini
-- 🔄 **Yoğunluk Analizi**: Saatlik/günlük trafik raporları
-- 🔄 **Geri Gelen Müşteri Tespiti**: Tekrar eden ziyaretçi analizi
-- 🔄 **Dashboard**: Web tabanlı görselleştirme paneli
 
-## 🚀 Kurulum
+## ✨ Özellikler
 
-### Sistem Gereksinimleri
-- **Python**: 3.8 veya üzeri
-- **İşletim Sistemi**: Windows 10/11, macOS, Linux
-- **Kamera**: USB kamera veya laptop kamerası
-- **RAM**: Minimum 4GB (8GB önerilir)
-- **Depolama**: 2GB boş alan
+### 🎯 Mevcut Özellikler
+- **🎥 Real-time Kamera**: 1280x720@30fps canlı görüntü akışı
+- **🤖 İnsan Tespiti**: YOLOv8 ile %95+ doğrulukta kişi tanıma
+- **⚡ Thread-Safe UI**: Donma olmayan, kararlı arayüz
+- **📊 Ziyaretçi Sayımı**: Gerçek zamanlı müşteri trafiği takibi
+- **💾 Veri Depolama**: SQLite + CSV backup sistemi
+- **📸 Screenshot**: Anlık görüntü kaydetme
+- **🔧 FPS Monitoring**: Performans takip sistemi
+- **🌙 Modern UI**: Dark mode uyumlu Türkçe arayüz
 
-### Adım 1: Projeyi İndirin
+### 🚀 Geliştirme Aşamasında
+- **👤 Çalışan Filtreleme**: Yüz tanıma ile çalışan/müşteri ayrımı
+- **🧠 Demografik Analiz**: Yaş ve cinsiyet tahmini
+- **📈 Analytics Dashboard**: Web tabanlı görselleştirme paneli
+- **🔄 Geri Gelen Müşteri**: Tekrar eden ziyaretçi tespiti
+- **📱 Mobile Dashboard**: Mobil uyumlu kontrol paneli
+
+## 🚀 Hızlı Başlangıç
+
+### Otomatik Kurulum (Windows)
+```powershell
+# PowerShell'i yönetici olarak çalıştırın
+.\quick_setup.ps1
+```
+
+### Manuel Kurulum
 ```bash
-git clone <repo-url>
+# 1. Projeyi klonlayın
+git clone https://github.com/erent8/OpenCV-Customer-Detection.git
 cd OpenCV-Customer-Detection
-```
 
-### Adım 2: Sanal Ortam Oluşturun
-```bash
+# 2. Sanal ortam oluşturun
 python -m venv venv
+venv\Scripts\activate  # Windows
+# source venv/bin/activate  # macOS/Linux
 
-# Windows
-venv\Scripts\activate
+# 3. Bağımlılıkları yükleyin
+pip install -r requirements_minimal.txt
 
-# macOS/Linux  
-source venv/bin/activate
+# 4. Sistemi başlatın
+python main.py
 ```
 
-### Adım 3: Kütüphaneleri Yükleyin
-```bash
-pip install -r requirements.txt
-```
+## 📸 Ekran Görüntüleri
+Ekran görselleri yakın zamanda yüklenecektir.
+### Ana Arayüz
+- **Real-time Detection**: Canlı kamera görüntüsü üzerinde insan tespiti
+- **Status Panel**: FPS, tespit sayısı ve sistem durumu
+- **Control Buttons**: Başlat/Durdur, Screenshot, Ayarlar
 
-### Adım 4: İlk Çalıştırma
-```bash
-python src/main.py
-```
+### Analytics Dashboard
+- **Günlük Trafik**: Saatlik ziyaretçi dağılımı
+- **Demografik İstatistikler**: Yaş ve cinsiyet analizi
+- **Trend Analizi**: Haftalık/aylık karşılaştırmalar
 
-## 📁 Proje Yapısı
+## 🛠️ Sistem Mimarisi
 
 ```
-OpenCV-Customer-Detection/
-├── src/                    # Ana kaynak kodlar
-│   ├── core/              # Ana işlem modülleri
-│   ├── models/            # ML modelleri ve ağırlıklar
-│   ├── utils/             # Yardımcı fonksiyonlar
-│   ├── config/            # Konfigürasyon dosyaları
-│   ├── data/              # Veri depolama
-│   └── ui/                # Kullanıcı arayüzü
-├── data/                  # Veri dosyaları
-│   ├── csv_backups/       # CSV yedekleri
-│   └── employee_faces/    # Çalışan yüz fotoğrafları
-├── logs/                  # Log dosyaları
-├── models/                # AI model dosyaları
-├── requirements.txt       # Python bağımlılıkları
-├── .cursorrules.md       # Geliştirme kuralları
-└── README.md             # Bu dosya
+├── 📁 src/
+│   ├── 🎯 core/              # Ana işlem modülleri
+│   │   ├── camera.py         # Kamera yönetimi
+│   │   ├── detector.py       # YOLOv8 tespit sistemi
+│   │   ├── visitor_tracker.py # Ziyaretçi takip
+│   │   └── performance_manager.py # Performans optimizasyonu
+│   ├── 💾 models/            # Veritabanı yönetimi
+│   ├── 🎨 ui/               # Kullanıcı arayüzü
+│   ├── ⚙️ config/           # Sistem ayarları
+│   └── 🔧 utils/            # Yardımcı fonksiyonlar
+├── 📊 data/                 # Veri depolama
+├── 📝 logs/                 # Sistem logları
+├── 🤖 models/               # AI model dosyaları
+└── 🌐 templates/            # Web dashboard
 ```
 
 ## ⚙️ Konfigürasyon
 
-Ana ayarlar `src/config/settings.py` dosyasında bulunur:
+Sistem ayarları `src/config/settings.py` dosyasında özelleştirilebilir:
 
 ```python
-# Kamera ayarları
-CAMERA_INDEX = 0          # Kamera seçimi
-CAMERA_WIDTH = 1280       # Görüntü genişliği
-CAMERA_HEIGHT = 720       # Görüntü yüksekliği
+# 🎥 Kamera Ayarları
+CAMERA_INDEX = 0              # Kamera seçimi (0, 1, 2...)
+CAMERA_WIDTH = 1280           # Görüntü genişliği
+CAMERA_HEIGHT = 720           # Görüntü yüksekliği
+FPS_TARGET = 30               # Hedef FPS
 
-# Tespit ayarları  
-DETECTION_CONFIDENCE = 0.5  # Tespit hassasiyeti
-DUPLICATE_PREVENTION_TIME = 30  # Tekrar sayımı engelleme (saniye)
+# 🎯 Tespit Ayarları
+DETECTION_CONFIDENCE = 0.5    # Tespit hassasiyeti (0-1)
+NMS_THRESHOLD = 0.4           # Non-max suppression
+PROCESS_EVERY_N_FRAMES = 1    # Her N frame'i işle
+
+# 🔄 Performans Ayarları
+USE_GPU = True                # GPU kullanımı (varsa)
+PROCESS_WIDTH = 640           # İşlem boyutu (performans için)
+PROCESS_HEIGHT = 480
 ```
 
-## 🔧 Kullanım
+## 📊 Performans
 
-### Temel Kullanım
-1. Sistemi çalıştırın: `python src/main.py`
-2. Kamera görüntüsü otomatik olarak başlar
-3. İnsanlar tespit edildiğinde yeşil çerçeve ile işaretlenir
-4. Ziyaretçi sayısı gerçek zamanlı güncellenir
+### Sistem Gereksinimleri
+| Bileşen | Minimum | Önerilen |
+|---------|---------|----------|
+| **CPU** | Intel i3 / AMD Ryzen 3 | Intel i5 / AMD Ryzen 5 |
+| **RAM** | 4GB | 8GB+ |
+| **GPU** | - | NVIDIA GTX 1050+ |
+| **Python** | 3.8+ | 3.9-3.10 |
+| **Kamera** | USB 2.0 | USB 3.0+ |
 
-### Veri Görüntüleme
-- **Günlük veriler**: `data/` klasöründeki CSV dosyaları
-- **Veritabanı**: `data/musteri_analiz.db` SQLite dosyası
-- **Loglar**: `logs/` klasöründeki log dosyaları
+### Performans Metrikleri
+- **FPS**: 15-30 (donanıma göre)
+- **Tespit Doğruluğu**: %95+
+- **Bellek Kullanımı**: ~200-500MB
+- **CPU Kullanımı**: %10-30
 
-## 📊 Veri Formatı
+## 🔧 Geliştirme
 
-### Ziyaretçi Verisi (CSV)
-```csv
-tarih,saat,ziyaretci_id,tespit_zamani,cinsiyet,yas_kategorisi,calisanmi
-2024-01-15,14:30:25,VIS_001,2024-01-15 14:30:25,Belirsiz,Belirsiz,False
-```
-
-### SQLite Tabloları
-- `ziyaretciler`: Temel ziyaretçi bilgileri
-- `tespitler`: Her tespit anı kayıtları  
-- `calisanlar`: Çalışan yüz verileri (hash'li)
-
-## 🛠️ Geliştirme
-
-### Katkıda Bulunma
-1. Bu projeyi fork edin
-2. Yeni özellik dalı oluşturun: `git checkout -b yeni-ozellik`
-3. Değişikliklerinizi commit edin: `git commit -am 'feat: Yeni özellik eklendi'`
-4. Dalınızı push edin: `git push origin yeni-ozellik`
-5. Pull Request oluşturun
-
-### Geliştirme Kuralları
-- `.cursorrules.md` dosyasındaki kurallara uyun
-- Türkçe yorumlar kullanın
-- PEP 8 standartlarına uygun kod yazın
-- Her fonksiyona docstring ekleyin
+### Kod Standartları
+- **PEP 8** uyumlu Python kodu
+- Türkçe yorumlar ve dokümantasyon
+- Thread-safe UI güncellemeleri
+- Comprehensive error handling
 
 ### Test Etme
 ```bash
-# Unit testler
-python -m pytest tests/
+# Sistem gereksinimleri testi
+python test_requirements.py
 
-# Kod kalitesi kontrol
-flake8 src/
-black src/
+# Kamera ve tespit testi
+python test_detection.py
+
+# Web dashboard testi
+python test_web_app.py
 ```
 
-## 🔒 Gizlilik ve Güvenlik
+### Katkıda Bulunma
+1. Bu projeyi fork edin
+2. Feature branch oluşturun: `git checkout -b yeni-ozellik`
+3. Değişikliklerinizi commit edin: `git commit -am 'feat: Yeni özellik'`
+4. Branch'i push edin: `git push origin yeni-ozellik`
+5. Pull Request oluşturun
 
-- ✅ **Yerel Depolama**: Tüm veriler yerel olarak saklanır
-- ✅ **Veri Şifreleme**: Yüz verileri hash'lenmiş şekilde tutulur  
-- ✅ **GDPR Uyumlu**: Kişisel veri koruma kurallarına uygun
-- ✅ **Anonim Kayıt**: Kişi kimliği saklanmaz
+## 🐛 Sorun Giderme
 
-## 📈 Performans
+### Sık Karşılaşılan Problemler
 
-### Sistem Gereksinimleri
-- **CPU**: Intel i5 veya AMD Ryzen 5 (önerilen)
-- **GPU**: NVIDIA GTX 1050 veya üzeri (opsiyonel hızlandırma)
-- **FPS**: 15-30 FPS (donanıma göre değişir)
+<details>
+<summary><strong>🎥 Kamera Erişim Sorunu</strong></summary>
 
-### Optimizasyon İpuçları
-- GPU kullanımı için: `YOLO_DEVICE = "cuda"` ayarlayın
-- Düşük çözünürlük için: `PROCESS_WIDTH/HEIGHT` değerlerini azaltın
-- Çoklu işlemci için: `PROCESSING_THREAD_COUNT` artırın
-
-## 🆘 Sorun Giderme
-
-### Sık Karşılaşılan Sorunlar
-
-**Kamera açılmıyor:**
-```bash
-# Kamera indeksini kontrol edin
-CAMERA_INDEX = 1  # settings.py dosyasında
+```python
+# Farklı kamera indekslerini deneyin
+CAMERA_INDEX = 0  # Laptop kamerası
+CAMERA_INDEX = 1  # USB kamera
+CAMERA_INDEX = 2  # İkinci USB kamera
 ```
+</details>
 
-**Yavaş performans:**
-```bash
-# İşlem boyutunu küçültün
+<details>
+<summary><strong>⚡ Performans Sorunları</strong></summary>
+
+```python
+# Düşük performanslı sistemler için
 PROCESS_WIDTH = 320
 PROCESS_HEIGHT = 240
+PROCESS_EVERY_N_FRAMES = 3
 ```
+</details>
 
-**Model yüklenmiyor:**
+<details>
+<summary><strong>🤖 Model Yükleme Hatası</strong></summary>
+
 ```bash
 # YOLOv8 modelini manuel indirin
-pip install ultralytics
 python -c "from ultralytics import YOLO; YOLO('yolov8n.pt')"
 ```
+</details>
 
-### Loglara Bakın
+### Log Analizi
 ```bash
-# Son logları görüntüle
-tail -f logs/sistem.log
+# Güncel logları görüntüle
+Get-Content logs\system.log -Tail 50  # Windows
+tail -f logs/system.log               # Linux/macOS
 ```
 
-## 📋 Sürüm Geçmişi
+## 📈 Roadmap
 
-- **v1.0.0** (2024-01-15): İlk sürüm - Temel kamera ve tespit sistemi
-- **v0.9.0** (2024-01-10): Alpha sürüm - Prototip geliştirme
+- [ ] **v1.1**: Web Dashboard ve API
+- [ ] **v1.2**: Demografik Analiz (Yaş/Cinsiyet)
+- [ ] **v1.3**: Çalışan Yüz Tanıma Sistemi
+- [ ] **v1.4**: Mobile App ve Cloud Sync
+- [ ] **v2.0**: Multi-Camera Support
+
+## 🤝 Topluluk
+
+- **GitHub Issues**: [Sorun bildirin](https://github.com/erent8/OpenCV-Customer-Detection/issues)
+- **Discussions**: [Tartışmalara katılın](https://github.com/erent8/OpenCV-Customer-Detection/discussions)
+- **Wiki**: [Dokümantasyon](https://opencv.org/get-started/?utm_source=opcv&utm_medium=home)
 
 ## 📞 İletişim
 
-- **Geliştirici**: Müşteri Analiz Sistemi Takımı
-- **E-posta**: [iletisim@musteri-analiz.com](mailto:iletisim@musteri-analiz.com)
-- **GitHub**: [https://github.com/musteri-analiz/opencv-customer-detection](https://github.com/musteri-analiz/opencv-customer-detection)
+<div align="center">
+
+**Eren Terzi (@erenterzi@protonmail.com)**
+
+[![GitHub](https://img.shields.io/badge/GitHub-erent8-black?style=for-the-badge&logo=github)](https://github.com/erent8)
+[![X](https://img.shields.io/badge/X-@therenn8-1DA1F2?style=for-the-badge&logo=x)](https://x.com/therenn8)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-eren--terzi-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/eren-terzi-573224225)
+[![Instagram](https://img.shields.io/badge/Instagram-erennt8-E4405F?style=for-the-badge&logo=instagram)](https://instagram.com/erennt8)
+
+📍 **Artvin, Turkey**
+
+</div>
 
 ## 📄 Lisans
 
-Bu proje MIT lisansı altında yayınlanmıştır. Detaylar için `LICENSE` dosyasını inceleyin.
+Bu proje açık kaynak kodlu olarak öğrenme amaçlı olarak geliştirilmiştir.
 
 ---
 
-**⭐ Bu projeyi faydalı bulduysanız yıldızlamayı unutmayın!** 
+<div align="center">
+
+**⭐ Projeyi faydalı bulduysanız yıldızlamayı unutmayın!**
+
+**🔄 Fork • ⭐ Star • 🐛 Issue • 🔧 PR**
+
+
+
+</div> 
