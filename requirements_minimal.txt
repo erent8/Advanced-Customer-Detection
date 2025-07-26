@@ -1,0 +1,27 @@
+# OpenCV Müşteri Analiz Sistemi - Minimal Gereksinimler
+# Temel sistem için gerekli kütüphaneler (Windows uyumlu)
+
+# Görüntü işleme ve kamera
+opencv-python>=4.8.0
+
+# Makine öğrenmesi ve AI (dlib olmadan)
+ultralytics>=8.0.0,<8.3.0  # YOLOv8
+torch>=1.13.0,<2.3.0  # PyTorch
+torchvision>=0.14.0,<0.18.0  # TorchVision
+
+# Veri işleme ve analiz
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Görselleştirme
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# GUI
+Pillow>=10.0.0
+
+# Yardımcı kütüphaneler
+python-dateutil>=2.8.0
+
+# NOT: face-recognition ve dlib kaldırıldı (Windows sorunları nedeniyle)
+# Yüz tanıma özelliği sonraki aşamada alternatif yöntemlerle eklenecek 

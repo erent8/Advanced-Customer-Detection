@@ -1,341 +1,209 @@
-# Advanced Customer Analytics System 🚀
+# 🏪 OpenCV Müşteri Analiz Sistemi
 
-## Overview
-This system is a comprehensive solution that analyzes customer behavior using AI-powered image processing technologies. It monitors customer traffic in real-time through camera systems, performs analysis, and provides detailed reports.
+Gümüş takı ve saat dükkânları için geliştirilmiş yapay zekâ destekli müşteri analiz sistemi. Bu sistem, kamera görüntüleri kullanarak müşteri trafiğini analiz eder, demografik bilgiler toplar ve iş kararlarına destek olacak detaylı raporlar sunar.
 
-## 🎯 Core Features and User Guide
+## 🎯 Özellikler
 
-### 1. Camera System and Image Processing
-#### Camera Setup
-- **Supported Cameras**: 
-  - IP cameras (RTSP support)
-  - USB webcams
-  - Built-in laptop cameras
-  - CCTV systems
+### Mevcut Özellikler (v1.0)
+- ✅ **Gerçek Zamanlı Kamera Görüntüsü**: OpenCV ile canlı video akışı
+- ✅ **İnsan Tespiti**: YOLOv8 ile yüksek doğrulukta kişi tanıma
+- ✅ **Temel Ziyaretçi Sayımı**: Günlük müşteri trafiği takibi
+- ✅ **Veri Kaydetme**: CSV ve SQLite ile güvenli veri depolama
 
-#### Camera Settings
+### Gelecek Özellikler
+- 🔄 **Çalışan Filtreleme**: Yüz tanıma ile çalışanları sayımdan çıkarma
+- 🔄 **Demografik Analiz**: Yaş ve cinsiyet tahmini
+- 🔄 **Yoğunluk Analizi**: Saatlik/günlük trafik raporları
+- 🔄 **Geri Gelen Müşteri Tespiti**: Tekrar eden ziyaretçi analizi
+- 🔄 **Dashboard**: Web tabanlı görselleştirme paneli
+
+## 🚀 Kurulum
+
+### Sistem Gereksinimleri
+- **Python**: 3.8 veya üzeri
+- **İşletim Sistemi**: Windows 10/11, macOS, Linux
+- **Kamera**: USB kamera veya laptop kamerası
+- **RAM**: Minimum 4GB (8GB önerilir)
+- **Depolama**: 2GB boş alan
+
+### Adım 1: Projeyi İndirin
 ```bash
-# Camera configuration
-python setup_camera.py --device_id 0  # Default camera
-python setup_camera.py --ip "rtsp://camera_ip:port"  # IP camera
-python setup_camera.py --resolution "1920x1080"  # Resolution setting
+git clone <repo-url>
+cd OpenCV-Customer-Detection
 ```
 
-#### Image Processing Features
-- Face detection and counting
-- Motion analysis
-- Heat map generation
-- Social distance analysis
-- Crowd density detection
-
-### 2. Real-Time Monitoring System
-
-#### Dashboard Usage
-1. **Startup**
+### Adım 2: Sanal Ortam Oluşturun
 ```bash
-python run_dashboard.py --port 8050 --debug True
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# macOS/Linux  
+source venv/bin/activate
 ```
 
-2. **Main Panel Features**
-- Live camera feed
-- Real-time customer count
-- Density indicators
-- Alarm status
-
-3. **Monitoring Options**
-- Multi-camera support
-- Zone-based monitoring
-- Custom area definition
-- Motion detection sensitivity
-
-### 3. Analytics Features
-
-#### Customer Count Analysis
-```python
-# Example analysis command
-python analyze.py --date "2024-03-20" --type "hourly"
-```
-
-- **Hourly Analytics**:
-  - Peak hours
-  - Low density periods
-  - Hourly trends
-
-- **Daily Reports**:
-  - Total visitor count
-  - Average dwell time
-  - Density distribution
-
-- **Weekly/Monthly Statistics**:
-  - Comparative analysis
-  - Trend graphs
-  - Forecasting models
-
-#### Behavioral Analysis
-- Movement patterns
-- Popular areas
-- Dwell points
-- Flow directions
-
-### 4. Visualization and Reporting
-
-#### Graph Types
-1. **3D Density Graphs**
+### Adım 3: Kütüphaneleri Yükleyin
 ```bash
-python visualize.py --type "3d_density" --output "density_report.pdf"
-```
-
-2. **Heat Maps**
-```bash
-python visualize.py --type "heatmap" --area "main_floor"
-```
-
-3. **Trend Analysis**
-```bash
-python visualize.py --type "trend" --period "last_30_days"
-```
-
-#### Report Formats
-- **PDF Reports**
-  - Daily summary
-  - Weekly details
-  - Monthly comparison
-  - Custom period analysis
-
-- **Excel Reports**
-  - Raw data export
-  - Pivot tables
-  - Charts
-  - Filterable data
-
-## Development Roadmap
-
-### Phase 1: Basic Improvements and Infrastructure (1-2 Weeks)
-- [x] Modernization and optimization of code structure
-- [x] Development of error detection and logging system
-- [x] Database integration (SQLite/PostgreSQL)
-- [x] Configuration management
-- [x] Adding unit tests
-
-### Phase 2: Advanced Analytical Features (2-3 Weeks)
-- [x] Customer census statistics
-  - [x] Hourly intensity analysis
-  - [x] Daily/Weekly/Monthly reports
-  - [x] Visit duration tracking
-- [x] Data visualization
-  - [x] Charts and heat maps
-  - [x] Interactive dashboard
-- [x] Reporting system
-  - [ ] PDF report generation
-  - [x] Excel export feature
-
-### Phase 3: Artificial Intelligence Integration (3-4 Weeks)
-- [ ] Advanced human detection
-  - [ ] Age estimation
-  - [ ] Gender determination
-  - [ ] Emotion analysis
-- [ ] Customer behavior analysis
-  - [ ] Movement patterns
-  - [ ] In-store route analysis
-- [ ] Repeat customer identification
-
-### Phase 4: Security and Monitoring Features (2-3 Weeks)
-- [ ] Advanced security features
-  - [ ] Suspicious behavior detection
-  - [ ] Motion detection and recording
-  - [ ] Night vision mode
-- [ ] Live monitoring system
-  - [ ] Multi-camera support
-  - [ ] Video recording and archiving
-
-### Phase 5: User Interface and Mobile Application (4-5 Weeks)
-- [ ] Web-based management panel
-  - [ ] User authorization system
-  - [ ] Real-time monitoring
-  - [ ] Statistics and reporting interface
-- [ ] Mobile application
-  - [ ] iOS and Android support
-  - [ ] Push notifications
-  - [ ] Remote monitoring
-
-### Phase 6: Integration and Automation (3-4 Weeks)
-- [ ] External system integrations
-  - [ ] POS system integration
-  - [ ] CRM system integration
-- [ ] Smart automation features
-  - [ ] Lighting control
-  - [ ] Climate control
-  - [ ] Door/security system integration
-- [ ] Notification system
-  - [ ] Email notifications
-  - [ ] SMS notifications
-  - [ ] Webhook support
-
-### 5. Performance Monitoring and Optimization
-
-#### System Performance
-```bash
-# Start performance monitor
-python monitor.py --metrics "all"
-```
-
-- CPU usage
-- RAM consumption
-- Disk I/O
-- Network usage
-
-#### Camera Performance
-- FPS (Frames Per Second) tracking
-- Image quality
-- Latency
-- Bandwidth usage
-
-### 6. Security and Data Management
-
-#### Data Security
-- SSL/TLS encryption
-- Role-based access control
-- IP restrictions
-- Session management
-
-#### Backup and Archiving
-```bash
-# Automatic backup
-python backup.py --type "full" --destination "/backup"
-```
-
-- Daily backups
-- Archive management
-- Data compression
-- Automatic cleanup
-
-### 7. Alarm and Notification System
-
-#### Alarm Types
-- Capacity exceeded
-- Abnormal density
-- System errors
-- Security breaches
-
-#### Notification Channels
-```bash
-# Notification settings
-python configure_notifications.py --channels "email,sms,webhook"
-```
-
-- Email notifications
-- SMS alerts
-- Webhook integrations
-- Mobile push notifications
-
-### 8. API and Integration
-
-#### REST API
-```bash
-# Start API server
-python run_api.py --port 5000
-```
-
-Example endpoints:
-- `/api/v1/customers/current`: Current customer count
-- `/api/v1/analytics/daily`: Daily analysis
-- `/api/v1/heatmap/latest`: Latest heat map
-- `/api/v1/alerts`: Active alerts
-
-#### Webhook Integrations
-- Slack
-- Microsoft Teams
-- Discord
-- Custom webhooks
-
-## Technical Requirements
-
-### Hardware Requirements
-- **Minimum**:
-  - CPU: Intel Core i5 or equivalent
-  - RAM: 8GB
-  - Disk: 256GB SSD
-  - GPU: 2GB VRAM
-
-- **Recommended**:
-  - CPU: Intel Core i7 or equivalent
-  - RAM: 16GB
-  - Disk: 512GB SSD
-  - GPU: 4GB VRAM
-
-### Software Requirements
-```python
-opencv-python>=4.8.0
-numpy>=1.24.0
-pygame>=2.5.0
-sqlalchemy>=2.0.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-pandas>=2.0.0
-dash>=2.14.0
-plotly>=5.18.0
-fpdf>=1.7.2
-xlsxwriter>=3.1.0
-python-dotenv>=1.0.0
-pytest>=7.4.0
-black>=23.7.0
-flake8>=6.1.0
-pillow>=10.0.0
-loguru>=0.7.0
-click>=8.0.0
-tabulate>=0.9.0
-```
-
-## Installation and Configuration
-
-### 1. Basic Setup
-```bash
-# Clone the repository
-git clone https://github.com/erent8/Advanced-Customer-Detection.git
-
-# Navigate to directory
-cd Advanced-Customer-Detection
-
-# Install dependencies
 pip install -r requirements.txt
 ```
 
-### 2. Camera Configuration
+### Adım 4: İlk Çalıştırma
 ```bash
-# Camera test
-python test_camera.py --device_id 0
-
-# Camera calibration
-python calibrate_camera.py --device_id 0
+python src/main.py
 ```
 
-### 3. System Optimization
-```bash
-# Performance test
-python benchmark.py --duration 300
+## 📁 Proje Yapısı
 
-# System check
-python system_check.py --verbose
+```
+OpenCV-Customer-Detection/
+├── src/                    # Ana kaynak kodlar
+│   ├── core/              # Ana işlem modülleri
+│   ├── models/            # ML modelleri ve ağırlıklar
+│   ├── utils/             # Yardımcı fonksiyonlar
+│   ├── config/            # Konfigürasyon dosyaları
+│   ├── data/              # Veri depolama
+│   └── ui/                # Kullanıcı arayüzü
+├── data/                  # Veri dosyaları
+│   ├── csv_backups/       # CSV yedekleri
+│   └── employee_faces/    # Çalışan yüz fotoğrafları
+├── logs/                  # Log dosyaları
+├── models/                # AI model dosyaları
+├── requirements.txt       # Python bağımlılıkları
+├── .cursorrules.md       # Geliştirme kuralları
+└── README.md             # Bu dosya
 ```
 
-## Troubleshooting and Problem Resolution
+## ⚙️ Konfigürasyon
 
-### Camera Issues
-1. **No Video Feed**
-   - Check camera connection
-   - Update drivers
-   - Check port conflicts
+Ana ayarlar `src/config/settings.py` dosyasında bulunur:
 
-2. **Low FPS**
-   - Reduce resolution
-   - Check GPU usage
-   - Check network bandwidth
+```python
+# Kamera ayarları
+CAMERA_INDEX = 0          # Kamera seçimi
+CAMERA_WIDTH = 1280       # Görüntü genişliği
+CAMERA_HEIGHT = 720       # Görüntü yüksekliği
 
-### Other Troubleshooting Sections
+# Tespit ayarları  
+DETECTION_CONFIDENCE = 0.5  # Tespit hassasiyeti
+DUPLICATE_PREVENTION_TIME = 30  # Tekrar sayımı engelleme (saniye)
+```
 
-## License and Contact
-This project open source.
+## 🔧 Kullanım
 
-For questions and support:
-- Email: erenterzi@protonmail.com
-- GitHub Issues: [Create New Issue](https://github.com/erent8/Advanced-Customer-Detection/issues) 
+### Temel Kullanım
+1. Sistemi çalıştırın: `python src/main.py`
+2. Kamera görüntüsü otomatik olarak başlar
+3. İnsanlar tespit edildiğinde yeşil çerçeve ile işaretlenir
+4. Ziyaretçi sayısı gerçek zamanlı güncellenir
+
+### Veri Görüntüleme
+- **Günlük veriler**: `data/` klasöründeki CSV dosyaları
+- **Veritabanı**: `data/musteri_analiz.db` SQLite dosyası
+- **Loglar**: `logs/` klasöründeki log dosyaları
+
+## 📊 Veri Formatı
+
+### Ziyaretçi Verisi (CSV)
+```csv
+tarih,saat,ziyaretci_id,tespit_zamani,cinsiyet,yas_kategorisi,calisanmi
+2024-01-15,14:30:25,VIS_001,2024-01-15 14:30:25,Belirsiz,Belirsiz,False
+```
+
+### SQLite Tabloları
+- `ziyaretciler`: Temel ziyaretçi bilgileri
+- `tespitler`: Her tespit anı kayıtları  
+- `calisanlar`: Çalışan yüz verileri (hash'li)
+
+## 🛠️ Geliştirme
+
+### Katkıda Bulunma
+1. Bu projeyi fork edin
+2. Yeni özellik dalı oluşturun: `git checkout -b yeni-ozellik`
+3. Değişikliklerinizi commit edin: `git commit -am 'feat: Yeni özellik eklendi'`
+4. Dalınızı push edin: `git push origin yeni-ozellik`
+5. Pull Request oluşturun
+
+### Geliştirme Kuralları
+- `.cursorrules.md` dosyasındaki kurallara uyun
+- Türkçe yorumlar kullanın
+- PEP 8 standartlarına uygun kod yazın
+- Her fonksiyona docstring ekleyin
+
+### Test Etme
+```bash
+# Unit testler
+python -m pytest tests/
+
+# Kod kalitesi kontrol
+flake8 src/
+black src/
+```
+
+## 🔒 Gizlilik ve Güvenlik
+
+- ✅ **Yerel Depolama**: Tüm veriler yerel olarak saklanır
+- ✅ **Veri Şifreleme**: Yüz verileri hash'lenmiş şekilde tutulur  
+- ✅ **GDPR Uyumlu**: Kişisel veri koruma kurallarına uygun
+- ✅ **Anonim Kayıt**: Kişi kimliği saklanmaz
+
+## 📈 Performans
+
+### Sistem Gereksinimleri
+- **CPU**: Intel i5 veya AMD Ryzen 5 (önerilen)
+- **GPU**: NVIDIA GTX 1050 veya üzeri (opsiyonel hızlandırma)
+- **FPS**: 15-30 FPS (donanıma göre değişir)
+
+### Optimizasyon İpuçları
+- GPU kullanımı için: `YOLO_DEVICE = "cuda"` ayarlayın
+- Düşük çözünürlük için: `PROCESS_WIDTH/HEIGHT` değerlerini azaltın
+- Çoklu işlemci için: `PROCESSING_THREAD_COUNT` artırın
+
+## 🆘 Sorun Giderme
+
+### Sık Karşılaşılan Sorunlar
+
+**Kamera açılmıyor:**
+```bash
+# Kamera indeksini kontrol edin
+CAMERA_INDEX = 1  # settings.py dosyasında
+```
+
+**Yavaş performans:**
+```bash
+# İşlem boyutunu küçültün
+PROCESS_WIDTH = 320
+PROCESS_HEIGHT = 240
+```
+
+**Model yüklenmiyor:**
+```bash
+# YOLOv8 modelini manuel indirin
+pip install ultralytics
+python -c "from ultralytics import YOLO; YOLO('yolov8n.pt')"
+```
+
+### Loglara Bakın
+```bash
+# Son logları görüntüle
+tail -f logs/sistem.log
+```
+
+## 📋 Sürüm Geçmişi
+
+- **v1.0.0** (2024-01-15): İlk sürüm - Temel kamera ve tespit sistemi
+- **v0.9.0** (2024-01-10): Alpha sürüm - Prototip geliştirme
+
+## 📞 İletişim
+
+- **Geliştirici**: Müşteri Analiz Sistemi Takımı
+- **E-posta**: [iletisim@musteri-analiz.com](mailto:iletisim@musteri-analiz.com)
+- **GitHub**: [https://github.com/musteri-analiz/opencv-customer-detection](https://github.com/musteri-analiz/opencv-customer-detection)
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında yayınlanmıştır. Detaylar için `LICENSE` dosyasını inceleyin.
+
+---
+
+**⭐ Bu projeyi faydalı bulduysanız yıldızlamayı unutmayın!** 
