@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/erent8/OpenCV-Customer-Detection?style=social)](https://github.com/erent8/OpenCV-Customer-Detection)
 
-> **Gümüş takı ve saat dükkânları için geliştirilmiş yapay zekâ destekli müşteri analiz sistemi**
+> **Mağazalar için geliştirilmiş yapay zekâ destekli müşteri analiz sistemi**
 
 Real-time kamera görüntüleri kullanarak müşteri trafiğini analiz eden, demografik bilgiler toplayan ve iş kararlarına destek olacak detaylı raporlar sunan akıllı sistem.
 
